@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hakm12-ship-it.github.io/jeju-one-place/sitemap.xml

@@ -1,0 +1,26 @@
+body { font-size: 16px; }
+.git, .sample a { color: var(--green); text-underline-offset: 3px; }
+.git { margin-left: auto; font-weight: 700; }
+.cases { display: flex; flex-wrap: wrap; gap: .6rem; margin: -.3rem 0 1.15rem; }
+.cases button { text-align: left; background: #fff; color: var(--ink); border-color: #b9cbbd; font-size: .9rem; font-weight: 500; }
+.cases b { margin-right: .35rem; color: var(--green); }
+.sample details { margin: .65rem 0; }
+.sample summary { cursor: pointer; color: var(--green); font-weight: 700; }
+.sample details p { margin: .65rem 0; }
+.sample .sample-note { font-size: .88rem; }
+.controls small, .baseline, .scope, .note, .headinner { font-size: .82rem; }
+@media (max-width: 800px) {
+  .layout { display: flex; flex-direction: column; }
+  .results { order: -1; grid-template-columns: minmax(0, 1fr); }
+  .headinner { gap: .5rem; }
+  .brand { padding-right: .5rem; }
+  .intro { margin: 1.25rem 0; }
+  .intro .print { display: none; }
+  .cases { display: grid; margin-top: 0; }
+}
+@media (max-width: 380px) {
+  .rankitem { grid-template-columns: minmax(0, 1fr) 59px 64px; gap: 5px; }
+  .scenario { grid-template-columns: 72px minmax(0, 1fr) auto; }
+  .rankitem strong, .scenario span { overflow-wrap: anywhere; }
+}
+@media print { .cases { display: none; } }
